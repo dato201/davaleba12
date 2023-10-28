@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/e77ac3a5f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <!-- header -->
+        <header>
+            <!-- img -->
+            <a href="" class="logo_div">
+                <img src="images/logo plant.svg" alt="" class="logo">
+                <h4 class="img_header_h4">PLANT SHOP</h4>
+            </a>
+            <!-- text -->
+            <form name="form_header" class="form_header">
+                    <input type="text" placeholder="What are you looking for?" name="search" class="search">
+                    <button type="submit" class="header_button_input"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!-- user -->
+            <div class="user">
+                <button class="button_LOG_IN"><h4 class="button_h4">LOG IN</h4></button>
+                <button class="cart_shopping"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </header>
+        <nav>
+            <ul class="header_ul">
+                <li><a href="" class="header_li">HOME</a></li>
+                <li><a href="" class="header_li">ABOUT</a></li>
+                <li><a href="" class="header_li">SERVICES</a></li>
+                <li><a href="" class="header_li">PLANT CARE</a></li>
+                <li><a href="" class="header_li use">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <!-- section -->
+        <section>
+            <div class="regestracia">
+                <h1 class="section_h1">CONTACT US</h1>
+                <!-- form -->
+                <form name="form_section" class="form_section">
+                    <!-- 2 inputs -->
+                    <div class="form_div1">
+                        <input type="text" placeholder="Name" name="user_name" class="name_mail">
+                        <input type="text" placeholder="Email" name="user_Email" class="name_mail">
+                    </div>
+                    <!-- select -->
+                    <label for="question">Is your question about an existing order?</label>
+                    <select name="choose" id="question" class="form_select">
+                        <option value="..."></option>
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                    <!-- radio -->
+                    <div class="fofm_div2">
+                        <h2 class="form_h2">I have a delivery question about my order</h2>
+                        <!-- I did not receive my order -->
+                        <div class="">
+                            <input type="radio" id="I did not receive my order" value="I did not receive my order" name="puestion">
+                            <label for="I did not receive my order">I did not receive my order</label>
+                        </div>
+
+                        <!-- My order is incorrect or arrived damaged -->
+                        <div class="">
+                            <input type="radio" id="My order is incorrect or arrived damaged" value="My order is incorrect or arrived damaged" name="puestion">
+                            <label for="My order is incorrect or arrived damaged">My order is incorrect or arrived damaged</label>
+                        </div>
+
+                        <!-- Cancel my order -->
+                        <div class="">
+                            <input type="radio" id="Cancel my order" value="Cancel my order" name="puestion">
+                            <label for="Cancel my order">Cancel my order</label>
+                        </div>
+
+                        <!-- Change my shipping address -->
+                        <div class="">
+                            <input type="radio" id="Change my shipping address" value="Change my shipping address" name="puestion">
+                            <label for="Change my shipping address">Change my shipping address</label>
+                        </div>
+                    </div>
+                    <label for="Message_label">Please provide more details below.</label>
+                    <textarea name="" id="Message_label" placeholder="Message"></textarea>
+                    <input type="checkbox" value="newsletter" name="NEWSLETTER" id="Newsletter">
+                    <label for="Newsletter">I want to receive the newsletter </label>
+                    <button type="submit" class="section_button">SEND</button>
+                </form>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>

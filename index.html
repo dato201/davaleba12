@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/e77ac3a5f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablets.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <div class="conteiner">
@@ -43,54 +45,81 @@
                 <h1 class="section_h1">CONTACT US</h1>
                 <!-- form -->
                 <form name="form_section" class="form_section">
-                    <!-- 2 inputs -->
+                    <!-- name_mail -->
                     <div class="form_div1">
                         <input type="text" placeholder="Name" name="user_name" class="name_mail">
                         <input type="text" placeholder="Email" name="user_Email" class="name_mail">
                     </div>
                     <!-- select -->
-                    <label for="question">Is your question about an existing order?</label>
-                    <select name="choose" id="question" class="form_select">
-                        <option value="..."></option>
-                        <option value="yes">YES</option>
-                        <option value="no">NO</option>
-                    </select>
+                    <div class="question_div">
+                        <label for="question" class="question">Is your question about an existing order?</label>
+                        <select name="choose" id="question" class="form_select">
+                            <option value="..." class="option"></option>
+                            <option value="yes" class="option">YES</option>
+                            <option value="no" class="option">NO</option>
+                        </select>
+                    </div>
+                    
                     <!-- radio -->
-                    <div class="fofm_div2">
-                        <h2 class="form_h2">I have a delivery question about my order</h2>
+                    <div class="form_div2">
+                        <h2 class="form_h3">I have a delivery question about my order</h2>
                         <!-- I did not receive my order -->
-                        <div class="">
-                            <input type="radio" id="I did not receive my order" value="I did not receive my order" name="puestion">
-                            <label for="I did not receive my order">I did not receive my order</label>
+                        <div class="radio_div">
+                            <input type="radio" id="I did not receive my order" value="I did not receive my order" name="puestion" class="radio_puestion">
+                            <label for="I did not receive my order" class="label_radio">I did not receive my order</label>
                         </div>
 
                         <!-- My order is incorrect or arrived damaged -->
-                        <div class="">
-                            <input type="radio" id="My order is incorrect or arrived damaged" value="My order is incorrect or arrived damaged" name="puestion">
-                            <label for="My order is incorrect or arrived damaged">My order is incorrect or arrived damaged</label>
+                        <div class="radio_div">
+                            <input type="radio" id="My order is incorrect or arrived damaged" value="My order is incorrect or arrived damaged" name="puestion" class="radio_puestion">
+                            <label for="My order is incorrect or arrived damaged" class="label_radio">My order is incorrect or arrived damaged</label>
                         </div>
 
                         <!-- Cancel my order -->
-                        <div class="">
-                            <input type="radio" id="Cancel my order" value="Cancel my order" name="puestion">
-                            <label for="Cancel my order">Cancel my order</label>
+                        <div class="radio_div">
+                            <input type="radio" id="Cancel my order" value="Cancel my order" name="puestion" class="radio_puestion">
+                            <label for="Cancel my order" class="label_radio">Cancel my order</label>
                         </div>
 
                         <!-- Change my shipping address -->
-                        <div class="">
-                            <input type="radio" id="Change my shipping address" value="Change my shipping address" name="puestion">
-                            <label for="Change my shipping address">Change my shipping address</label>
+                        <div class="radio_div">
+                            <input type="radio" id="Change my shipping address" value="Change my shipping address" name="puestion" class="radio_puestion">
+                            <label for="Change my shipping address" class="label_radio">Change my shipping address</label>
                         </div>
                     </div>
-                    <label for="Message_label">Please provide more details below.</label>
+                    <!-- textarea -->
+                    <label for="Message_label" class="Message_label">Please provide more details below.</label>
                     <textarea name="" id="Message_label" placeholder="Message"></textarea>
-                    <input type="checkbox" value="newsletter" name="NEWSLETTER" id="Newsletter">
-                    <label for="Newsletter">I want to receive the newsletter </label>
+                    <div class="checkbox_div">
+                        <input type="checkbox" value="newsletter" name="NEWSLETTER" id="Newsletter" class="NEWSLETTER">
+                        <label for="Newsletter" class="Newsletter">I want to receive the newsletter </label>
+                    </div>
+                    
                     <button type="submit" class="section_button">SEND</button>
                 </form>
             </div>
         </section>
-        <footer></footer>
+        <!-- footer -->
+        <footer>
+            <div class="Follow">
+                <h3 class="Contacts_h3">Follow us</h3>
+                <div class="networks">
+                    <img src="images/entypo-social_facebook.svg" alt="">
+                    <img src="images/typcn_social-instagram.svg" alt="">
+                    <img src="images/fa-brands_twitter-square.svg" alt="">
+                    <img src="images/fa_pinterest-square.svg" alt="">
+                </div>
+            </div>
+            <div class="Contact">
+                <h3 class="Contacts_h3">Contact us</h3>
+                <ul class="Contact_ul">
+                    <li class="li_Contact"><i class="fa-solid fa-location-dot"></i>New York, 94 Brodway</li>
+                    <li class="li_Contact"><i class="fa-solid fa-phone"></i>+555 67 88 00</li>
+                    <li class="li_Contact"><i class="fa-solid fa-envelope-open"></i>plant@gmail.com</li>
+                </ul>
+            </div>
+            <h4 class="footer_h4">Copyright © 2023 House Plant Shop.</h4>
+        </footer>
     </div>
 </body>
 </html>

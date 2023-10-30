@@ -1,8 +1,80 @@
 @media (max-width: 919px) {
-    .regestracia{
+    .original{
+        display: none;
+    }
+    .nav_mini {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_li {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+        font-size: 24px;
+        color: white;
+    }
+    .glass{
+        font-size: 24px;
+    }
+    .form_header_nav {
+        height: 38px;
+        display: flex;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+    .Contact_ul_small{
+        display: flex;
+        flex-direction: row;
+        column-gap: 14px;
+    }
+    .mini_li{
+        color: #FFF;
+        /* font-family: Poppins; */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .li_Contact{
+        display: none;
+    }
+    .Follow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 779px) {
+    .regestracia{
+        width: 70%;
     }
     .form_section{
-        width: 99%;
+        width: 80%;
+    }
+}
+@media (max-width: 579px) {
+    .regestracia{
+        width:90%;
+    }
+    .form_section{
+        width: 90%;
     }
 }

@@ -106,7 +106,17 @@ nav {
     font-weight: 400;
     line-height: 26px;
 }
+.fa-bars{
+    display: none;
+}
+.form_header_nav{
+    display: none;
+    /* width: calc(560 / 1440 * 100%); */
+    height: 48px;
+    /* display: grid; */
+    /* grid-template-columns: 90% 1fr; */
 
+}
 .use {
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -343,7 +353,7 @@ textarea {
 footer {
     background-color: var(--cyan);
     display: flex;
-    height: 232px;
+    /* height: 232px; */
     padding: 48px 72px;
     justify-content: space-between;
 }
@@ -374,6 +384,9 @@ footer {
     flex-direction: column;
     row-gap: 8px;
 }
+.Contact_ul_small{
+    display: none;
+}
 .li_Contact{
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -384,6 +397,10 @@ footer {
     display: flex;
     align-items: center;
     column-gap: 8px;
+}
+.li_Contact_mini_li{
+    color: #FFF;
+    font-size: 16px;
 }
 .footer_h4{
     color: #F5E0F5;
